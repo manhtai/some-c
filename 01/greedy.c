@@ -16,12 +16,7 @@ int main(void)
     int cents = dollar * 100;
     
     // Greedy algorithm to change
-    // Must use array here
-    float coins[4];
-    coins[0] = 25;
-    coins[1] = 10;
-    coins[2] = 5;
-    coins[3] = 1;
+    float coins[] = {25, 10, 5, 1};
     int i = 0;
     int count = 0;
     while (i < 4)
