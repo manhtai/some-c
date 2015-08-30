@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <math.h>
 
 int main(void)
 {
@@ -13,10 +14,10 @@ int main(void)
     while (dollar < 0);
 
     // Convert to cents
-    int cents = dollar * 100;
+    int cents = round(dollar * 100);
     
     // Greedy algorithm to change
-    float coins[] = {25, 10, 5, 1};
+    int coins[] = {25, 10, 5, 1};
     int i = 0;
     int count = 0;
     while (i < 4)
