@@ -1,0 +1,52 @@
+0.  GIF: 8-bit: 256,
+JPEG, PNG, BMP: 24-bit: 16 millions,
+BMP: 32-bit: 4 millions.
+
+1.  GIF.
+
+2.  Lossy is having quality lost when compressed, lossless is having no lost
+in quality when compressed.
+
+3.  JPEG.
+
+4.  First, the system modifies the filename’s first character in the file’s
+directory entry to signal that the file has been deleted and that the directory
+entry can be recycled.
+Second, the system moves all of the file’s FAT clusters to the hard drive’s
+list of free clusters. The actual file data is never touched.
+
+5.  Simply overwriting user data with one or two passes of random data is
+probably sufficient to render the overwritten information irrecoverable.
+
+6.  A header file which defines different integer size widths.
+
+7.  To make sure that the integer you intend to use is in the specified size.
+
+8.  BYTE: 1 bytes,
+DWORD: 4 bytes,
+LONG: 4 bytes,
+WORD: 2 bytes,
+
+9.  BM or 0x4d42
+
+10. bfSize: The size, in bytes, of the bitmap file.
+biSize: The number of bytes required by the structure.
+
+11. If biHeight is negative, the bitmap is a top-down DIB and its origin is the
+upper-left corner.
+
+12. biBitCount
+
+13. Out of memory or not enough permissions.
+
+14. You read 1 time RGBTRIPLE size bytes each.
+
+15. (4 - (3 * 3) % 4) % 4 = 3
+
+16. Skip over the padding by setting the position indicator for the input file
+incremented by the size of padding itself relative to the current position
+indicator.
+
+17. The current position indicator of file.
+
+18. Look like Rob Bowden with a cat, I can't tell what color though.
