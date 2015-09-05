@@ -1,0 +1,25 @@
+0.  It is the longest word in the English language published in a dictionary,
+the Oxford English Dictionary.
+
+1.  Returns resource usage measures for who, which can be: RUSAGE_SELF, RUSAGE_CHILDREN,
+RUSAGE_THREAD.
+
+2.  16
+
+3.  Because we need to measure resouce used for A, not for a copy of A.
+
+4.  It gets each character from the file, read only alphabet characters into `word`,
+then spell-check it, accompany with measuring resource.
+
+5.  `fscanf` is very strictly when categorize words, but we need flexibility instead.
+
+6.  Because we're not supposed to modify word or dictionary when we `check` and `load`.
+
+7.  I use trie, inside each node has 3 components: a dictionary size counter, a pointer to
+node, and a flag for word.
+
+8.  It run pretty quick all time. Hehe.
+
+9.  I don't.
+
+10. I have. It is 'Conditional jump or move depends on uninitialised value' error.
