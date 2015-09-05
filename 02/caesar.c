@@ -38,5 +38,7 @@ int main(int argc, char* argv[])
             printf("%c", s[i]); // Keep the not letter unchanged
     }
 
+    printf("\n");
+
     return 0; // Success
 }

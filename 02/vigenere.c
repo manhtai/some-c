@@ -45,5 +45,7 @@ int main(int argc, char* argv[])
             printf("%c", s[i]); // Keep the not alphabet letters unchanged
     }
 
+    printf("\n");
+
     return 0; // Success
 }

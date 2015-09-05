@@ -84,10 +84,10 @@ int main(int argc, char* argv[])
     // change width, height, andn size of the image
     newbi.biWidth = newWidth;
     newbi.biHeight = bi.biHeight * ratio;
-    newbi.biSizeImage = (bi.biWidth * bi.biHeight) * sizeof(RGBTRIPLE);
+    newbi.biSizeImage = (newWidth * sizeof(RGBTRIPLE) + newPadding) * abs(newbi.biHeight);
 
     // change size of bitmap file
-    bf.bfSize = 54 + bi.biSizeImage;
+    bf.bfSize = bf.bfSize - bi.biSizeImage + newbi.biSizeImage;
 
     // write outfile's BITMAPFILEHEADER
     fwrite(&bf, sizeof(BITMAPFILEHEADER), 1, outptr);
