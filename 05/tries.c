@@ -40,7 +40,6 @@ bool trie_append(node* trie, char* string)
 bool trie_lookup(node* trie, const char* string)
 {
     node* cusor = trie;
-    bool result;
     for (int i = 0, l = strlen(string); i < l; i++)
     {
         int index = get_index(string[i]);
@@ -49,8 +48,7 @@ bool trie_lookup(node* trie, const char* string)
         else
             cusor = cusor->children[index];
     }
-    result = (cusor->word == true) ? (true) : (false);
-    return result;
+    return cusor->word;
 }
 
 // Size of trie
