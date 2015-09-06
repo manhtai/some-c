@@ -8,7 +8,10 @@ int main(int argc, char* argv[])
 {
     // Check agrc
     if (argc != 2)
+    {
+        printf("Usage: ./vigenere keyword");
         return 1;
+    }
 
     // Get k from argv
     string k = argv[1];
@@ -17,7 +20,10 @@ int main(int argc, char* argv[])
     for (int i = 0, n = strlen(k); i < n; i++)
     {
         if (!isalpha(k[i]))
+        {
+            printf("keyword must contain only alphabet!");
             return 1;
+        }
     }
 
     // Get plain text

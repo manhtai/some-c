@@ -9,7 +9,10 @@ int main(int argc, char* argv[])
 {
     // Check agrc
     if (argc != 2)
+    {
+        printf("Usage: ./caesar k");
         return 1;
+    }
 
     // Get k from argv, converted to int
     int k = atoi(argv[1]);

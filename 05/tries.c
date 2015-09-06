@@ -19,7 +19,6 @@ bool trie_append(node* trie, char* string)
     node* cusor = trie;
     for (int i = 0, l = strlen(string); i < l; i++)
     {
-        // TODO: Add character '
         int index = get_index(string[i]);
         if (cusor->children[index] == NULL)
         {
